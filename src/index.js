@@ -7,6 +7,7 @@ import glob from 'tiny-glob/sync';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import { rollup, watch } from 'rollup';
+import dirImport from 'rollup-plugin-dir-import';
 import nodent from 'rollup-plugin-nodent';
 import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
@@ -321,6 +322,7 @@ function createConfig(options, entry, format, writeMeta) {
 						inject: false,
 						extract: !!writeMeta,
 					}),
+					dirImport(),
 					useTypescript &&
 						typescript({
 							typescript: require('typescript'),

@@ -53,6 +53,7 @@
     "rollup-plugin-buble": "^0.19.2",
     "rollup-plugin-bundle-size": "^1.0.1",
     "rollup-plugin-commonjs": "^9.0.0",
+    "rollup-plugin-dir-import": "https://github.com/joelgallant/rollup-plugin-dir-import.git",
     "rollup-plugin-es3": "^1.1.0",
     "rollup-plugin-flow": "^1.1.1",
     "rollup-plugin-node-resolve": "^3.3.0",
